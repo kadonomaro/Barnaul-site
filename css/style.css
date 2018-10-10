@@ -29,6 +29,7 @@
   padding: 20px 15px;
   color: #fff;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .nav__link:hover {
@@ -66,14 +67,85 @@
   padding: 8px 4px;
   margin-bottom: 5px;
   background: #333;
-  font-size: 36px;
+  font-size: 2rem;
   color: #fff;
 }
 
 .main__subtitle {
   padding: 8px 4px;
   background: #333;
-  font-size: 48px;
+  font-size: 3rem;
   color: #fff;
+}
+
+.people {
+  padding-top: 10px;
+  height: 100vh;
+  background-color: #fff;
+  background: url("../img/background/people_background.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.people__title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.people__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+}
+
+.human {
+  width: 256px;
+  height: 256px;
+  border: 2px solid #333;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.7);
+}
+
+.human:hover .human__link {
+  opacity: 1;
+}
+
+.human:hover::after {
+  opacity: 0.8;
+}
+
+.human::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 256px;
+  width: 256px;
+  background: #000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.human__link {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-decoration: none;
+  z-index: 5;
+  color: #fff;
+  font-size: 1.5rem;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 /*# sourceMappingURL=style.css.map */
