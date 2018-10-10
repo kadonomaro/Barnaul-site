@@ -1,8 +1,56 @@
+/**** Variables****/
+$main-blue: #09c;
+
+
+/**** Variables****/
+
+
+.page
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
 .container
+  
   margin: 0 auto;
-  width: 1200px;
+  max-width: 1200px;
+  
 
 .header
-  height: 80px;
-  background: green;
+  
+  
+  
+/****Navigation Block*****/
+.nav
+  background: $main-blue;
+  
+.nav__list
+  display: flex;
+  justify-content: space-around;
+.nav__link
+  display: block;
+  padding: 20px 15px;
+  color: #fff;
+  text-decoration: none;
+  &:hover
+    background: darken($main-blue, 5%);
 
+.logo
+  height: 50px; //переделать
+
+/****Main****/
+.main
+  height: 100vh;
+  background: url("../img/background/barnaul_1.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  &__title
+    font-size: 40px;
+    color: #bbb;
+    
+   
+  &__subtitle
+    font-size: 30px;
+    
+    

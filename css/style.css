@@ -1,10 +1,67 @@
-.container {
-  margin: 0 auto;
-  width: 1200px;
+/**** Variables****/
+/**** Variables****/
+.page {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
 }
 
-.header {
-  height: 80px;
-  background: green;
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/****Navigation Block*****/
+.nav {
+  background: #09c;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.nav__link {
+  display: block;
+  padding: 20px 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav__link:hover {
+  background: #0086b3;
+}
+
+.logo {
+  height: 50px;
+}
+
+/****Main****/
+.main {
+  height: 100vh;
+  background: url("../img/background/barnaul_1.jpg") no-repeat center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main__title {
+  font-size: 40px;
+  color: #bbb;
+}
+
+.main__subtitle {
+  font-size: 30px;
 }
 /*# sourceMappingURL=style.css.map */
