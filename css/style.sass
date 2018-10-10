@@ -9,6 +9,7 @@ $main-blue: #09c;
 .page
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
+  background-color: #cfc;
 .container
   margin: 0 auto;
   max-width: 1200px;
@@ -38,6 +39,7 @@ $main-blue: #09c;
 /****Main****/
 .main
   font-family: 'Lobster', cursive;
+  font-weight: normal;
   
   display: flex;
   justify-content: center;
@@ -54,28 +56,41 @@ $main-blue: #09c;
   
   &__title
     padding: 10px 10px;
-    margin-bottom: 5px;
     font-size: 2rem;
+    font-weight: normal;
     color: #fff;
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
   &__subtitle
     padding: 10px 10px;
     font-size: 3rem;
+    font-weight: normal;
     color: #fff;
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
   /****People****/
 .people
+  position: relative;
   border-top: 1px solid #333;
   padding-top: 10px;
   
   background-color: #fff;
-  background: url("../img/background/people.jpg") no-repeat center;
+  background: url("../img/background/final.jpg") no-repeat center;
   background-size: cover;
+  &::after
+    position: absolute;
+    content: "";
+    top: 500px;
+    left: -200px;
+    background: url("../img/photography/photo1.png");
+    width: 300px;
+    height: 187px;
+    z-index: -2;
+    transform: rotate(25deg);
 
   &__title
     margin-bottom: 20px;
     text-align: center;
     font-size: 1.5rem;
+    color: #fff;
     &::before
       content: "<< ";
       color: #fff;
@@ -85,6 +100,7 @@ $main-blue: #09c;
   &__inner 
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 0 20px;
     
 .human-card
@@ -126,22 +142,30 @@ $main-blue: #09c;
     transition: opacity 0.5s;
     
 .human-article
+  
+  
 
 
   &__title
     padding: 10px 20px;
-    width: 10%;
+    display: inline-block;
     margin: 20px 20px 0px 20px;
     font-size: 1.2rem;
+    font-weight: normal;
     color: #fff;
-    background-color: red;
+    background-color: #cfc095;
   
   &__description
+    position: relative;
     padding: 20px;
     margin: 0 20px;
     clear: both;
+    line-height: 18px;
 
-    background-color: green;
+    background: url("../img/background/newspaper.jpg") no-repeat center;
+    background-size: cover;
+  
+
 
   &__photo
     float: left;
