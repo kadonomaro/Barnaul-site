@@ -82,7 +82,6 @@
 .people {
   border-top: 1px solid #333;
   padding-top: 10px;
-  height: 100vh;
   background-color: #fff;
   background: url("../img/background/people.jpg") no-repeat center;
   background-size: cover;
@@ -94,8 +93,14 @@
   font-size: 1.5rem;
 }
 
-.people__title::before, .people__title::after {
-  content: " abc ";
+.people__title::before {
+  content: "<< ";
+  color: #fff;
+}
+
+.people__title::after {
+  content: " >>";
+  color: #fff;
 }
 
 .people__inner {
@@ -108,7 +113,7 @@
   padding: 0 20px;
 }
 
-.human {
+.human-card {
   width: 256px;
   height: 256px;
   border: 1px solid #333;
@@ -117,15 +122,15 @@
   text-align: center;
 }
 
-.human:hover .human__link {
+.human-card:hover .human-card__link {
   opacity: 1;
 }
 
-.human:hover::after {
+.human-card:hover::after {
   opacity: 0.8;
 }
 
-.human::after {
+.human-card::after {
   position: absolute;
   content: '';
   top: 0;
@@ -138,7 +143,7 @@
   opacity: 0;
 }
 
-.human__link {
+.human-card__link {
   font-family: 'Lobster', cursive;
   opacity: 0;
   position: absolute;
@@ -152,5 +157,26 @@
   font-size: 1.5rem;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
+}
+
+.human-article__title {
+  padding: 10px 20px;
+  width: 10%;
+  margin: 20px 20px 0px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: red;
+}
+
+.human-article__description {
+  padding: 20px;
+  margin: 0 20px;
+  clear: both;
+  background-color: green;
+}
+
+.human-article__photo {
+  float: left;
+  padding-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */

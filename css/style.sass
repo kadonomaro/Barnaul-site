@@ -4,7 +4,8 @@ $main-blue: #09c;
 @import url('https://fonts.googleapis.com/css?family=Lobster&subset=cyrillic');
 /**** Variables****/
 
-
+// *
+//   border: 1px solid green;
 .page
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
@@ -66,7 +67,7 @@ $main-blue: #09c;
 .people
   border-top: 1px solid #333;
   padding-top: 10px;
-  height: 100vh;
+  
   background-color: #fff;
   background: url("../img/background/people.jpg") no-repeat center;
   background-size: cover;
@@ -75,14 +76,18 @@ $main-blue: #09c;
     margin-bottom: 20px;
     text-align: center;
     font-size: 1.5rem;
-    &::before,&::after
-      content: " abc ";
+    &::before
+      content: "<< ";
+      color: #fff;
+    &::after
+      content: " >>";
+      color: #fff;
   &__inner 
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
     
-.human
+.human-card
   
   width: 256px;
   height: 256px;
@@ -93,7 +98,7 @@ $main-blue: #09c;
   position: relative;
   text-align: center;
   
-  &:hover .human__link
+  &:hover .human-card__link
     opacity: 1;
   &:hover::after
     opacity: 0.8;
@@ -120,6 +125,28 @@ $main-blue: #09c;
     font-size: 1.5rem;
     transition: opacity 0.5s;
     
+.human-article
 
+
+  &__title
+    padding: 10px 20px;
+    width: 10%;
+    margin: 20px 20px 0px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: red;
+  
+  &__description
+    padding: 20px;
+    margin: 0 20px;
+    clear: both;
+
+    background-color: green;
+
+  &__photo
+    float: left;
+    padding-right: 10px;
+    
+    
 
     
