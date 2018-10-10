@@ -4,7 +4,7 @@
 .page {
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
-  background-color: #cfc;
+  background-color: #cc9;
 }
 
 .container {
@@ -179,6 +179,11 @@
   transition: opacity 0.5s;
 }
 
+.human-article {
+  display: none;
+  padding-bottom: 20px;
+}
+
 .human-article__title {
   padding: 10px 20px;
   display: inline-block;
@@ -203,4 +208,15 @@
   float: left;
   padding-right: 10px;
 }
+
+/****Service Classes ****/
+.content-show {
+  display: block;
+}
+
+.content-hide {
+  display: none;
+}
+
+/****Service Classes ****/
 /*# sourceMappingURL=style.css.map */

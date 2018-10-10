@@ -4,12 +4,14 @@ $main-blue: #09c;
 @import url('https://fonts.googleapis.com/css?family=Lobster&subset=cyrillic');
 /**** Variables****/
 
+
+
 // *
 //   border: 1px solid green;
 .page
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
-  background-color: #cfc;
+  background-color: #cc9;
 .container
   margin: 0 auto;
   max-width: 1200px;
@@ -71,7 +73,7 @@ $main-blue: #09c;
   position: relative;
   border-top: 1px solid #333;
   padding-top: 10px;
-  
+  // min-height: 100vh;
   background-color: #fff;
   background: url("../img/background/final.jpg") no-repeat center;
   background-size: cover;
@@ -108,8 +110,7 @@ $main-blue: #09c;
   width: 256px;
   height: 256px;
   border: 1px solid #333;
-  
-  
+
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -142,8 +143,8 @@ $main-blue: #09c;
     transition: opacity 0.5s;
     
 .human-article
-  
-  
+  display: none;
+  padding-bottom: 20px;
 
 
   &__title
@@ -172,5 +173,10 @@ $main-blue: #09c;
     padding-right: 10px;
     
     
-
+/****Service Classes ****/
+.content-show
+  display: block;
+.content-hide
+  display: none;
+/****Service Classes ****/
     
