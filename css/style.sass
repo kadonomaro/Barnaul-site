@@ -5,23 +5,26 @@ $main-blue: #09c;
 /**** Variables****/
 
 
-// *
-//   border: 1px solid green;
 .page
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
+  background: url("../img/background/wood.jpg");
   background-color: #cc9;
+  
 .container
   margin: 0 auto;
   max-width: 1200px;
   
+  
 .header
-
-/****Navigation Block*****/
+  
+/**** Navigation Block *****/
 .nav
   background: $main-blue;
   
+  
 .nav__list
+  
   display: flex;
   justify-content: space-around;
 .nav__link
@@ -36,7 +39,7 @@ $main-blue: #09c;
 .logo
   height: 50px; //переделать
 
-/****Main****/
+/**** Main ****/
 .main
   font-family: 'Lobster', cursive;
   font-weight: normal;
@@ -68,7 +71,7 @@ $main-blue: #09c;
     color: #fff;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
     
-/****People****/
+/**** People ****/
 .people
   position: relative;
   border-top: 1px solid #333;
@@ -106,16 +109,26 @@ $main-blue: #09c;
     
 
   &__title
-    margin-bottom: 20px;
+    position: relative;
+    font-family: 'Lobster', cursive;
+    margin-top: 30px;
+    margin-bottom: 40px;
     text-align: center;
     font-size: 1.5rem;
-    color: #fff;
-    &::before
-      content: "<< ";
-      color: #fff;
+    letter-spacing: 2px;
+    &::before, &::after
+      position: absolute;
+      content: "";
+      background-image: url("../img/decorations/decorations.png");
+      width: 320px;
+      height: 30px;
+      top: -120%;
+      left: 50%;
+      transform: translateX(-50%);
     &::after
-      content: " >>";
-      color: #fff;
+      top: 120%;
+      transform: translateX(-50%) scale(-1);
+      
   
     
 .human-card  
@@ -201,21 +214,70 @@ $main-blue: #09c;
     transform: translateY(0);
     opacity: 1;
 
+
+/**** Attractions ****/
+
+  
 .attractions
   padding: 20px;
+  background: url("../img/background/436499.jpg") no-repeat center;
+  background-size: cover;
+  &__title
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    &::before, &::after
+      position: absolute;
+      content: "";
+      background-image: url("../img/decorations/decorations.png");
+      width: 320px;
+      height: 30px;
+      top: -120%;
+      left: 50%;
+      transform: translateX(-50%) scale(1.3);
+    &::after
+      top: 120%;
+      transform: translateX(-50%) scale(-1);
+
 .showplace
   margin-bottom: 20px;
+  padding: 20px;
+  background: url("../img/tiles/notepad-small.jpg") repeat;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0,0,0,1);
+
 
   &__figure
-    padding: 20px;
-    float: left;
-    border: 2px solid green;
-    background-color: gray;
+    
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    background: url("../img/tiles/photopaper-small.jpg") repeat;
+    
   &__figcaption
     padding: 5px 10px;
-    border: 2px solid black;
+    text-align: center;
+
+
+  &__description
+    line-height: 20px;
+    
+    
     
 
 
 
-    
+  /********************************Service Classes /********************************/
+.flex-order
+  order: 1;
+  margin-right: 0;
+  margin-left: 10px;
+.rotate3
+  transform: rotate(3deg);
+.rotate-3
+  transform: rotate(-3deg);
+  
+/********************************Service Classes /********************************/
