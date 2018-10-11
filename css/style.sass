@@ -111,23 +111,12 @@ $main-blue: #09c;
   &__title
     position: relative;
     font-family: 'Lobster', cursive;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    
+    margin-bottom: 15px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     letter-spacing: 2px;
-    &::before, &::after
-      position: absolute;
-      content: "";
-      background-image: url("../img/decorations/decorations.png");
-      width: 320px;
-      height: 30px;
-      top: -120%;
-      left: 50%;
-      transform: translateX(-50%);
-    &::after
-      top: 120%;
-      transform: translateX(-50%) scale(-1);
+    
       
   
     
@@ -223,22 +212,15 @@ $main-blue: #09c;
   background: url("../img/background/436499.jpg") no-repeat center;
   background-size: cover;
   &__title
+    
+    font-family: 'Lobster', cursive;
+    letter-spacing: 2px;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-align: center;
-    font-size: 1.5rem;
-    &::before, &::after
-      position: absolute;
-      content: "";
-      background-image: url("../img/decorations/decorations.png");
-      width: 320px;
-      height: 30px;
-      top: -120%;
-      left: 50%;
-      transform: translateX(-50%) scale(1.3);
-    &::after
-      top: 120%;
-      transform: translateX(-50%) scale(-1);
+    font-size: 1.8rem;
+    
+  
 
 .showplace
   margin-bottom: 20px;
@@ -250,12 +232,18 @@ $main-blue: #09c;
 
 
   &__figure
-    
-    margin-right: 10px;
+    position: relative;
+    margin-right: 20px;
     padding: 10px;
     border: 1px solid #777;
     border-radius: 5px;
     background: url("../img/tiles/photopaper-small.jpg") repeat;
+    transition: 0.5s;
+
+    &:hover
+      transform: rotate(0deg);
+    
+
     
   &__figcaption
     padding: 5px 10px;
@@ -265,9 +253,6 @@ $main-blue: #09c;
   &__description
     line-height: 20px;
     
-    
-    
-
 
 
   /********************************Service Classes /********************************/
@@ -275,9 +260,9 @@ $main-blue: #09c;
   order: 1;
   margin-right: 0;
   margin-left: 10px;
-.rotate3
-  transform: rotate(3deg);
-.rotate-3
-  transform: rotate(-3deg);
+.rotate4
+  transform: rotate(4deg);
+.rotate-4
+  transform: rotate(-4deg);
   
 /********************************Service Classes /********************************/

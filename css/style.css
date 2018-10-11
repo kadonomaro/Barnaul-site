@@ -132,29 +132,10 @@
 .people__title {
   position: relative;
   font-family: 'Lobster', cursive;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   letter-spacing: 2px;
-}
-
-.people__title::before, .people__title::after {
-  position: absolute;
-  content: "";
-  background-image: url("../img/decorations/decorations.png");
-  width: 320px;
-  height: 30px;
-  top: -120%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.people__title::after {
-  top: 120%;
-  -webkit-transform: translateX(-50%) scale(-1);
-          transform: translateX(-50%) scale(-1);
 }
 
 .human-card {
@@ -287,28 +268,12 @@
 }
 
 .attractions__title {
+  font-family: 'Lobster', cursive;
+  letter-spacing: 2px;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   text-align: center;
-  font-size: 1.5rem;
-}
-
-.attractions__title::before, .attractions__title::after {
-  position: absolute;
-  content: "";
-  background-image: url("../img/decorations/decorations.png");
-  width: 320px;
-  height: 30px;
-  top: -120%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) scale(1.3);
-          transform: translateX(-50%) scale(1.3);
-}
-
-.attractions__title::after {
-  top: 120%;
-  -webkit-transform: translateX(-50%) scale(-1);
-          transform: translateX(-50%) scale(-1);
+  font-size: 1.8rem;
 }
 
 .showplace {
@@ -327,11 +292,19 @@
 }
 
 .showplace__figure {
-  margin-right: 10px;
+  position: relative;
+  margin-right: 20px;
   padding: 10px;
   border: 1px solid #777;
   border-radius: 5px;
   background: url("../img/tiles/photopaper-small.jpg") repeat;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.showplace__figure:hover {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 .showplace__figcaption {
@@ -351,14 +324,14 @@
   margin-left: 10px;
 }
 
-.rotate3 {
-  -webkit-transform: rotate(3deg);
-          transform: rotate(3deg);
+.rotate4 {
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
 }
 
-.rotate-3 {
-  -webkit-transform: rotate(-3deg);
-          transform: rotate(-3deg);
+.rotate-4 {
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
 }
 
 /********************************Service Classes /********************************/
