@@ -176,24 +176,19 @@ $main-blue: #09c;
     clear: both;
     line-height: 18px;
     border: 1px solid #333;
+    background: url("../img/tiles/paper-small.jpg") repeat;
 
-    background: url("../img/background/newspaper.jpg") no-repeat center;
-    background-size: cover;
-  
   &__photo
     float: left;
     padding-right: 10px;
-    
-    
-/****Service Classes ****/
+  
+/********************************Service Classes /********************************
 .content-show
   display: block;
   animation-name: show_double;
   animation-duration: 1s;
 
-/****Service Classes ****/
-  
-  
+/********************************Service Classes /********************************
 
 @keyframes show_double
   0%
@@ -206,6 +201,20 @@ $main-blue: #09c;
     transform: translateY(0);
     opacity: 1;
 
+.attractions
+  padding: 20px;
+.showplace
+  margin-bottom: 20px;
+
+  &__figure
+    padding: 20px;
+    float: left;
+    border: 2px solid green;
+    background-color: gray;
+  &__figcaption
+    padding: 5px 10px;
+    border: 2px solid black;
+    
 
 
 
