@@ -47,7 +47,7 @@ $main-blue: #09c;
   flex-direction: column;
 
   height: 100vh;
-  background: url("../img/background/barnaul.jpg") no-repeat center;
+  background: url("../img/background/old.jpg") no-repeat center;
   background-size: cover;
   text-align: center;
 
@@ -60,13 +60,13 @@ $main-blue: #09c;
     font-size: 2rem;
     font-weight: normal;
     color: #fff;
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
   &__subtitle
     padding: 10px 10px;
     font-size: 3rem;
     font-weight: normal;
     color: #fff;
-    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
     
 /****People****/
 .people
@@ -77,18 +77,29 @@ $main-blue: #09c;
   background-color: #fff;
   background: url("../img/background/final.jpg") no-repeat center;
   background-size: cover;
+  
 
-  overflow: hidden;
-  &::after
+  &::before
     position: absolute;
     content: "";
     top: 500px;
-    left: -200px;
+    left: -160px;
     background: url("../img/photography/photo1.png");
-    width: 300px;
-    height: 187px;
+    width: 255px;
+    height: 300px;
     z-index: -2;
-    transform: rotate(25deg);
+
+  &::after
+    position: absolute;
+    content: "";
+    top: 150px;
+    right: -150px;
+    background: url("../img/photography/photo.png");
+    width: 199px;
+    height: 353px;
+    z-index: -2;
+  
+    
 
   &__title
     margin-bottom: 20px;
@@ -155,6 +166,7 @@ $main-blue: #09c;
     font-weight: normal;
     color: #fff;
     background-color: #996;
+    
   
   &__description
     position: relative;
@@ -177,34 +189,23 @@ $main-blue: #09c;
   display: block;
   animation-name: show_double;
   animation-duration: 1s;
-  // transform: translateX(500px);
+
 /****Service Classes ****/
   
   
-@keyframes show
-  from 
-    transform: translateY(100%);
-    opacity: 0;
-  to 
-    transform: translateY(0);
-    opacity: 1;
+
 @keyframes show_double
   0%
-    transform: translateX(100%);
+    transform: translateY(100%);
     opacity: 0;
-  90%
-    transform: translateX(-1%);
-    opacity: 0.9;
+  80%
+    transform: translateY(-15px);
+    opacity: 0.8;
   100%
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
 
 
 
 
-    
-
- 
-
-/****Service Classes ****/
     

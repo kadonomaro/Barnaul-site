@@ -59,7 +59,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100vh;
-  background: url("../img/background/barnaul.jpg") no-repeat center;
+  background: url("../img/background/old.jpg") no-repeat center;
   background-size: cover;
   text-align: center;
   border-top: 1px solid #333;
@@ -72,7 +72,7 @@
   font-size: 2rem;
   font-weight: normal;
   color: #fff;
-  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
 }
 
 .main__subtitle {
@@ -80,7 +80,7 @@
   font-size: 3rem;
   font-weight: normal;
   color: #fff;
-  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.8);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
 }
 
 /****People****/
@@ -92,20 +92,28 @@
   background-color: #fff;
   background: url("../img/background/final.jpg") no-repeat center;
   background-size: cover;
-  overflow: hidden;
+}
+
+.people::before {
+  position: absolute;
+  content: "";
+  top: 500px;
+  left: -160px;
+  background: url("../img/photography/photo1.png");
+  width: 255px;
+  height: 300px;
+  z-index: -2;
 }
 
 .people::after {
   position: absolute;
   content: "";
-  top: 500px;
-  left: -200px;
-  background: url("../img/photography/photo1.png");
-  width: 300px;
-  height: 187px;
+  top: 150px;
+  right: -150px;
+  background: url("../img/photography/photo.png");
+  width: 199px;
+  height: 353px;
   z-index: -2;
-  -webkit-transform: rotate(25deg);
-          transform: rotate(25deg);
 }
 
 .people__title {
@@ -224,66 +232,38 @@
 }
 
 /****Service Classes ****/
-@-webkit-keyframes show {
-  from {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes show {
-  from {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-    opacity: 0;
-  }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 @-webkit-keyframes show_double {
   0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
     opacity: 0;
   }
-  90% {
-    -webkit-transform: translateX(-1%);
-            transform: translateX(-1%);
-    opacity: 0.9;
+  80% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+    opacity: 0.8;
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
-
 @keyframes show_double {
   0% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
     opacity: 0;
   }
-  90% {
-    -webkit-transform: translateX(-1%);
-            transform: translateX(-1%);
-    opacity: 0.9;
+  80% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+    opacity: 0.8;
   }
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
-
-/****Service Classes ****/
 /*# sourceMappingURL=style.css.map */
