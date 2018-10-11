@@ -269,9 +269,10 @@ $main-blue: #09c;
 /****History Block ****/
 .history
   padding: 20px;
-  height: 1000px;
+  
   background: url("../img/background/history.jpg") no-repeat center;
   background-size: cover;
+  overflow: hidden;
   &__title
     margin-bottom: 15px;
     font-family: 'Lobster', cursive;
@@ -288,10 +289,13 @@ $main-blue: #09c;
     box-sizing: border-box;
     margin-bottom: 10px;
     margin-right: 10px;
-    padding: 10px;
-    border: 1px solid #777;
+    padding: 20px;
+    border: 1px solid #333;
     overflow: hidden;
-    background: #996;
+    background: url("../img/tiles/paper2.jpg");
+  
+    
+    
     &:hover::after
       opacity: 0.8;
     &:hover .history__description
@@ -300,7 +304,7 @@ $main-blue: #09c;
       position: absolute;
       content: "";
       width: 560px;
-      height: 360px;
+      height: 380px;
       top: 0;
       left: 0;
       background-color: #000;
@@ -319,15 +323,3 @@ $main-blue: #09c;
     z-index: 2;
     opacity: 0;
     transition: opacity 0.5s;
-
-@keyframes fade
-  0%
-    transform: translateX(-100%);
-  25%
-    transform: translateX(-75%);
-  50%
-    transform: translateX(-50%);
-  75%
-    transform: translateX(-25%);
-  100%
-    transform: translateX(-0%);

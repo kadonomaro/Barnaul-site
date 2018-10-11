@@ -338,9 +338,9 @@
 /****History Block ****/
 .history {
   padding: 20px;
-  height: 1000px;
   background: url("../img/background/history.jpg") no-repeat center;
   background-size: cover;
+  overflow: hidden;
 }
 
 .history__title {
@@ -368,10 +368,10 @@
           box-sizing: border-box;
   margin-bottom: 10px;
   margin-right: 10px;
-  padding: 10px;
-  border: 1px solid #777;
+  padding: 20px;
+  border: 1px solid #333;
   overflow: hidden;
-  background: #996;
+  background: url("../img/tiles/paper2.jpg");
 }
 
 .history__photo:hover::after {
@@ -386,7 +386,7 @@
   position: absolute;
   content: "";
   width: 560px;
-  height: 360px;
+  height: 380px;
   top: 0;
   left: 0;
   background-color: #000;
@@ -409,51 +409,5 @@
   opacity: 0;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
-}
-
-@-webkit-keyframes fade {
-  0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  25% {
-    -webkit-transform: translateX(-75%);
-            transform: translateX(-75%);
-  }
-  50% {
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-  75% {
-    -webkit-transform: translateX(-25%);
-            transform: translateX(-25%);
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-}
-
-@keyframes fade {
-  0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  25% {
-    -webkit-transform: translateX(-75%);
-            transform: translateX(-75%);
-  }
-  50% {
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-  75% {
-    -webkit-transform: translateX(-25%);
-            transform: translateX(-25%);
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
 }
 /*# sourceMappingURL=style.css.map */
