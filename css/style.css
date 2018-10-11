@@ -335,4 +335,15 @@
 }
 
 /********************************Service Classes /********************************/
+.history {
+  padding: 20px;
+}
+
+.history__title {
+  margin-bottom: 15px;
+  font-family: 'Lobster', cursive;
+  letter-spacing: 2px;
+  font-size: 1.8rem;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
