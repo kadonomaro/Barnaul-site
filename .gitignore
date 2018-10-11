@@ -1,2 +1,3 @@
-# Exclude any PSD source
+# Exclude any *.PSD, *.txt source
 *.psd
+*.txt
