@@ -209,7 +209,7 @@ $main-blue: #09c;
   
 .attractions
   padding: 20px;
-  background: url("../img/background/436499.jpg") no-repeat center;
+  background: url("../img/background/attractions.jpg") no-repeat center;
   background-size: cover;
   &__title
     
@@ -228,7 +228,7 @@ $main-blue: #09c;
   background: url("../img/tiles/notepad-small.jpg") repeat;
   display: flex;
   align-items: center;
-  box-shadow: 0 0 10px rgba(0,0,0,1);
+  box-shadow: 0 0 10px rgba(0, 0 ,0, 1);
 
 
   &__figure
@@ -266,12 +266,68 @@ $main-blue: #09c;
   transform: rotate(-4deg);
   
 /********************************Service Classes /********************************/
-
+/****History Block ****/
 .history
   padding: 20px;
+  height: 1000px;
+  background: url("../img/background/history.jpg") no-repeat center;
+  background-size: cover;
   &__title
     margin-bottom: 15px;
     font-family: 'Lobster', cursive;
     letter-spacing: 2px;
     font-size: 1.8rem;
     text-align: center;
+  &__inner
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  &__photo
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #777;
+    overflow: hidden;
+    background: #996;
+    &:hover::after
+      opacity: 0.8;
+    &:hover .history__description
+      opacity: 1;
+    &::after
+      position: absolute;
+      content: "";
+      width: 560px;
+      height: 360px;
+      top: 0;
+      left: 0;
+      background-color: #000;
+      opacity: 0;
+      transition: opacity 0.5s;
+
+  &__description
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    width: 90%;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+@keyframes fade
+  0%
+    transform: translateX(-100%);
+  25%
+    transform: translateX(-75%);
+  50%
+    transform: translateX(-50%);
+  75%
+    transform: translateX(-25%);
+  100%
+    transform: translateX(-0%);
