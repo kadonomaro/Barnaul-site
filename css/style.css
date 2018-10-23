@@ -10,7 +10,7 @@
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1300px;
 }
 
 /**** Navigation Block *****/
@@ -127,7 +127,6 @@
 
 .people__title {
   position: relative;
-  margin-bottom: 15px;
   font-family: 'Lobster', cursive;
   font-size: 1.8rem;
   letter-spacing: 2px;
@@ -136,8 +135,7 @@
 
 .human-card {
   position: relative;
-  margin-bottom: 10px;
-  width: 256px;
+  margin: 15px 15px;
   height: 256px;
   text-align: center;
   border: 1px solid #333;
@@ -261,6 +259,7 @@
   padding: 20px;
   background: url("../img/background/attractions.jpg") no-repeat center;
   background-size: cover;
+  border-top: 1px solid #333;
 }
 
 .attractions__title {
@@ -336,6 +335,7 @@
   padding: 20px;
   background: url("../img/background/history.jpg") no-repeat center;
   background-size: cover;
+  border-top: 1px solid #333;
   overflow: hidden;
 }
 
@@ -360,7 +360,7 @@
 
 .history__photo {
   position: relative;
-  padding: 20px;
+  padding: 15px;
   margin-right: 10px;
   margin-bottom: 10px;
   -webkit-box-sizing: border-box;
@@ -405,5 +405,28 @@
   transition: opacity 0.5s;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+/**** footer ****/
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 40px;
+  background: gray;
+  border-top: 1px solid #333;
+}
+
+.footer-about__title {
+  font-size: 18px;
+}
+
+.footer-about__link {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #FFF;
 }
 /*# sourceMappingURL=style.css.map */
