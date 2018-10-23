@@ -428,5 +428,11 @@
   margin-top: 10px;
   text-decoration: none;
   color: #FFF;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.footer-about__link:hover {
+  color: #CCC;
 }
 /*# sourceMappingURL=style.css.map */
