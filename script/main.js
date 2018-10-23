@@ -43,6 +43,17 @@ elemGebler.onclick = function(evt) {
 };
 
 
+//закрытие меню
+var closeMenu = document.querySelector('.nav__item-close');
+var nav = document.querySelector('.nav');
+
+closeMenu.addEventListener('click', isClose);
+
+function isClose(){
+  nav.classList.toggle('is-close');
+};
+
+
 //Анимация появления при скролле
 // const history = document.querySelector('.history');
 // const historyTop = history.offsetTop;
