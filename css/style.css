@@ -153,7 +153,6 @@ html {
   text-align: center;
   background: url("../img/background/old.jpg") no-repeat center;
   background-size: cover;
-  border-top: 1px solid #333;
   -webkit-transition: opacity 3s;
   transition: opacity 3s;
 }
@@ -623,13 +622,14 @@ html {
 }
 
 .footer-about__title {
-  font-size: 18px;
+  font-size: 1.2rem;
   color: #3399ff;
 }
 
 .footer-about__link {
   display: block;
   margin-top: 10px;
+  font-size: 1.2rem;
   text-decoration: none;
   color: #FFF;
   -webkit-transition: color 0.3s;
