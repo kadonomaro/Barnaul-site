@@ -3,12 +3,14 @@ $main-blue: #09c;
 
 @import url('https://fonts.googleapis.com/css?family=Lobster&subset=cyrillic');
 /**** Variables****/
-
+html
+  scroll-behavior: smooth;  //не поддерживается многими браузерами
 .page
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   background: url("../img/background/wood.jpg");
   background-color: #cc9;
+
   
 .container
   // max-width: 1300px;
@@ -119,6 +121,8 @@ $main-blue: #09c;
   background: url("../img/background/final.jpg") no-repeat center;
   background-size: cover;
   border-top: 1px solid #333;
+
+  
 
   &__inner 
     display: flex;
