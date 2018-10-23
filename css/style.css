@@ -130,6 +130,8 @@
   font-size: 1.8rem;
   letter-spacing: 2px;
   text-align: center;
+  color: #09c;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
 }
 
 .human-card {
@@ -196,7 +198,7 @@
   display: inline-block;
   margin: 20px 20px 0px 20px;
   padding: 10px 20px;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: normal;
   color: #fff;
   background-color: #996;
@@ -207,6 +209,7 @@
   margin: 0 20px;
   padding: 20px;
   clear: both;
+  font-size: 1.2rem;
   line-height: 18px;
   background: url("../img/tiles/paper-small.jpg") repeat;
   border: 1px solid #333;
@@ -277,6 +280,8 @@
   font-size: 1.8rem;
   letter-spacing: 2px;
   text-align: center;
+  color: #09c;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
 }
 
 .showplace {
@@ -316,6 +321,7 @@
 
 .showplace__description {
   line-height: 20px;
+  font-size: 1.2rem;
 }
 
 /********************************Service Classes /********************************/
@@ -353,6 +359,8 @@
   font-size: 1.8rem;
   letter-spacing: 2px;
   text-align: center;
+  color: #09c;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
 }
 
 .history__inner {
