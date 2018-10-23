@@ -26,6 +26,11 @@ $main-blue: #09c;
   width: 100%;
   background: $main-blue;
   transition: all 0.7s;
+  @media screen and (max-width: 900px)
+    width: 50%;
+    min-width: 220px;
+    margin: 0 25%;
+
 
 
 .nav__list
@@ -36,15 +41,16 @@ $main-blue: #09c;
     text-align: center;
 
 .nav__item-close
-  height: 56px;
+  height: 46px;
 
   font-size: 2rem;
-  line-height: 56px;
+  line-height: 46px;
   color: #FFF;
   background: darken($main-blue, 10%);
 
   transition: all 0.3s;
   &:hover
+    color: #ccc;
     background: darken($main-blue, 15%);
     cursor: pointer;
   
@@ -60,6 +66,8 @@ $main-blue: #09c;
   color: #fff;
   text-decoration: none;
   white-space: nowrap;
+  @media screen and (max-width: 900px)
+    padding: 15px 15px;
 
   transition: all 0.3s;
   &:hover
@@ -136,7 +144,7 @@ $main-blue: #09c;
     content: "";
     position: absolute;
     top: 150px;
-    right: -130px;
+    right: -140px;
     width: 182px;
     height: 353px;
     z-index: -2;
@@ -216,9 +224,12 @@ $main-blue: #09c;
 
     font-size: 1.4rem;
     font-weight: normal;
-    color: #fff;
+    
 
     background-color: #996;
+    &-link
+      color: #fff;
+      text-decoration: none;
      
   &__description
     position: relative;

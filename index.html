@@ -30,7 +30,7 @@
   
   <div class="container">
     <!--Main Block-->
-    <main class="main">
+    <main class="main" id = "main">
       <p class="main__title">Как молод и прекрасен, родной мой</p>
       <h1 class="main__subtitle">Барнаул</h1>
     </main><!--Main-->
@@ -41,14 +41,14 @@
     <section class="people" id = "people">
       <h2 class="people__title">Известные люди Барнаула</h2>
       <div class="people__inner">  
-        <div class="human-card"><a href="#people" class="human-card__link" id = "people-polzunov">Иван Ползунов</a><img src="img/people/polzunov.jpg" alt="Иван Ползунов" class="human-card__photo"  width="256" height="256"></div>
-        <div class="human-card"><a href="#people" class="human-card__link" id = "people-demidov">Акинфий Демидов <br></a><img src="img/people/demidov.jpg" alt="Акинфий Демидов" class="human-card__photo"  width="256" height="256"></div>
-        <div class="human-card"><a href="#people" class="human-card__link" id = "people-lisavenko">Михаил Лисавенко</a><img src="img/people/lisavenko.jpg" alt="Михаил Лисавенко" class="human-card__photo"  width="256" height="256"></div>
-        <div class="human-card"><a href="#people" class="human-card__link" id = "people-gebler">Фридрих Геблер</a><img src="img/people/gebler.jpg" alt="" class="human-card__photo"  width="256" height="256"></div>
+        <div class="human-card"><a href="#polzunov" class="human-card__link" id = "people-polzunov">Иван Ползунов</a><img src="img/people/polzunov.jpg" alt="Иван Ползунов" class="human-card__photo"  width="256" height="256"></div>
+        <div class="human-card"><a href="#demidov" class="human-card__link" id = "people-demidov">Акинфий Демидов <br></a><img src="img/people/demidov.jpg" alt="Акинфий Демидов" class="human-card__photo"  width="256" height="256"></div>
+        <div class="human-card"><a href="#lisavenko" class="human-card__link" id = "people-lisavenko">Михаил Лисавенко</a><img src="img/people/lisavenko.jpg" alt="Михаил Лисавенко" class="human-card__photo"  width="256" height="256"></div>
+        <div class="human-card"><a href="#gebler" class="human-card__link" id = "people-gebler">Фридрих Геблер</a><img src="img/people/gebler.jpg" alt="" class="human-card__photo"  width="256" height="256"></div>
       </div>
       
       <article class="human-article content-show" id = "polzunov">
-        <h3 class="human-article__title">Иван Ползунов</h3>
+        <h3 class="human-article__title"><a class = "human-article__title-link" href="#people">Иван Ползунов</a></h3>
         <p class="human-article__description">
           <img class = "human-article__photo" src="img/people/polzunov.jpg" alt="Иван Ползунов">
           <strong>Иван Иванович Ползунов</strong>, создатель первой в России паровой машины и первого в мире двухцилиндрового парового двигателя, родился в 1728 году в Екатеринбурге в семье отставного солдата.<br>
@@ -64,7 +64,7 @@
         </p>
       </article>
       <article class="human-article" id = "demidov">
-        <h3 class="human-article__title">Акинфий Демидов</h3>
+        <h3 class="human-article__title"><a class = "human-article__title-link" href="#people">Акинфий Демидов</a></h3>
         <p class="human-article__description">
           <img class = "human-article__photo" src="img/people/demidov.jpg" alt="Акинфий Демидов">
           <strong>Акинфий Никитич Демидов</strong> родился в 1678 году в семье тульского оружейника Никиты Демидовича Антюфеева (с 1702 года – Демидова). С юных лет он обучался кузнечному, оружейному и железоделательному ремеслу. В молодости посещал Саксонию, где познакомился с европейским опытом организации и управления системой горнозаводского производства.<br>
@@ -77,7 +77,7 @@
         </p>
       </article>
       <article class="human-article" id ="lisavenko">
-        <h3 class="human-article__title">Михаил Лисавенко</h3>
+        <h3 class="human-article__title"><a class = "human-article__title-link" href="#people">Михаил Лисавенко</a></h3>
         <p class="human-article__description">
           <img class = "human-article__photo" src="img/people/lisavenko.jpg" alt="Михаил Лисавенко">
           <strong>Лисавенко Михаил Афанасьевич</strong> - Известный ученый-садовод, доктор сельско-хозяйственных наук, профессор, академик ВАСХНИЛ, Герой Социалистического Труда, дважды лауреат Государственной премии (1946, 1981 -- посмертно). Селекционер, основатель и бессменный руководитель Алтайской опытной станции садоводства (с 1973 НИИ садоводства Сибири его имени), один из организаторов промышленного садоводства в Сибири. Родился в селе Боготол (ныне Красноярский край) в семье лесообъездчика. 
@@ -89,7 +89,7 @@
         </p>
       </article>
       <article class="human-article" id = "gebler">
-        <h3 class="human-article__title">Фридрих Геблер</h3>
+        <h3 class="human-article__title"><a class = "human-article__title-link" href="#people">Фридрих Геблер</a></h3>
         <p class="human-article__description">
           <img class = "human-article__photo" src="img/people/gebler.jpg" alt="Фридрих Геблер">
           <strong>Геблер Фридрих Вильгельмович</strong> - врач, естествоиспытатель, географ, член-корреспондент РАН (1833). 
@@ -207,7 +207,7 @@
 
     <footer class="footer">
       <div class="footer-logo">
-        <img src="img/footer/flatstudio.png" alt="flatstudio" width="150" height="63">
+        <a href="#main"><img src="img/footer/flatstudio.png" alt="flatstudio" width="150" height="63"></a> 
         
       </div>
       <div class="footer-about">
