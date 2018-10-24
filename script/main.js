@@ -54,6 +54,10 @@ function isClose(){
 };
 
 
+
+
+
+
 //плавный скрол
 // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 //   anchor.addEventListener('click', function (e) {
@@ -65,23 +69,5 @@ function isClose(){
 //   });
 // });
 
-
-//Анимация появления при скролле
-// const history = document.querySelector('.history');
-// const historyTop = history.offsetTop;
-// var historyInner = document.querySelector('.history__inner');
-
-// function fadeIn(){
-//   console.log("history: " + historyTop);
-//   console.log("window: " + window.scrollY);
-//   if (window.scrollY >= historyTop-1000){
-//     historyInner.classList.add('fade-in');
-//   } else {
-//     historyInner.classList.remove('fade-in');
-//   }
-
-// }
-
-// window.addEventListener("scroll", fadeIn);
 
 

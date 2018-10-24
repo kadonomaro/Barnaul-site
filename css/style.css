@@ -1,5 +1,4 @@
 /**** Variables****/
-@import url("https://fonts.googleapis.com/css?family=Lobster&subset=cyrillic");
 /**** Variables****/
 html {
   scroll-behavior: smooth;
@@ -39,8 +38,8 @@ html {
   position: absolute;
   width: 100%;
   background: #09c;
-  -webkit-transition: all 0.7s;
-  transition: all 0.7s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 @media screen and (max-width: 900px) {
@@ -50,6 +49,7 @@ html {
     width: 50%;
     min-width: 220px;
     margin: 0 25%;
+    border-radius: 0 0 50px 50px;
   }
 }
 
@@ -81,6 +81,7 @@ html {
   line-height: 46px;
   color: #FFF;
   background: #007399;
+  border-radius: 0 0 50px 50px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -328,6 +329,13 @@ html {
   border: 1px solid #333;
 }
 
+@media screen and (max-width: 650px) {
+  .human-article__description {
+    margin: 0 10px;
+    padding: 10px;
+  }
+}
+
 .human-article__photo {
   float: left;
   padding-right: 10px;
@@ -508,7 +516,6 @@ html {
 /********************************Service Classes /********************************/
 /****History Block ****/
 .history {
-  padding: 20px;
   background: url("../img/background/history.jpg") no-repeat center;
   background-size: cover;
   border-top: 1px solid #333;
@@ -547,8 +554,7 @@ html {
 .history__photo {
   position: relative;
   padding: 15px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: url("../img/tiles/paper2.jpg");
@@ -594,13 +600,16 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 90%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   z-index: 2;
-  padding: 10px;
+  padding: 10px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #fff;
   text-align: center;
   font-size: 1.1rem;
+  overflow: auto;
   opacity: 0;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
