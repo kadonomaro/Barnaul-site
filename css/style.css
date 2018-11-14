@@ -250,6 +250,8 @@ html {
   width: 20%;
   height: auto;
   margin: 15px 20px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   text-align: center;
   overflow: hidden;
 }
@@ -516,6 +518,7 @@ html {
 /********************************Service Classes /********************************/
 /****History Block ****/
 .history {
+  padding-top: 10px;
   background: url("../img/background/history.jpg") no-repeat center;
   background-size: cover;
   border-top: 1px solid #333;
