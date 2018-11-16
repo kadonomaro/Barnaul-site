@@ -50,6 +50,12 @@ html
   @media screen and (max-width: 900px)
     display: block;
     text-align: center;
+.nav__item
+  width: 25%
+  text-align: center
+  @media screen and (max-width: 900px)
+    width: 100%
+
 
 .nav__item-close
 
@@ -167,9 +173,8 @@ html
   &__title
     position: relative;
     
-    font-family: 'Lobster', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
-    letter-spacing: 2px;
     text-align: center;
     color: $main-blue;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
@@ -191,7 +196,6 @@ html
     width: 100%;
     height: auto;
     overflow: hidden;
-    border: 1px solid #333;
   
   &:hover .human-card__link
     opacity: 1;
@@ -290,7 +294,7 @@ html
 
 /**** Attractions ****/ 
 .attractions
-  padding: 20px;
+  padding: 10px 20px;
   @media screen and (max-width: 650px)
     padding: 10px;
 
@@ -302,9 +306,8 @@ html
 
     margin-bottom: 15px;
     
-    font-family: 'Lobster', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
-    letter-spacing: 2px;
     text-align: center;
     color: $main-blue;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
@@ -372,7 +375,7 @@ html
 
 /****History Block ****/
 .history
-  padding-top: 10px;
+  padding: 10px;
 
   background: url("../img/background/history.jpg") no-repeat center;
   background-size: cover;
@@ -382,9 +385,8 @@ html
   &__title
     margin-bottom: 15px;
 
-    font-family: 'Lobster', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
-    letter-spacing: 2px;
     text-align: center;
     color: $main-blue;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
@@ -476,3 +478,74 @@ html
       transition: color 0.3s
       &:hover
         color: #aaa;
+
+.box
+  position: relative
+  width: 300px
+  height: 300px
+  background-color: #fd9
+  overflow: hidden
+  &:hover .right
+    transition: all 0.3s
+    transform: translateY(100%)
+  &:hover .left
+    transition: all 0.3s
+    transition-delay: 0.3s
+    transform: translateY(-100%)
+  &:hover .bottom
+    transition: all 0.3s
+    transition-delay: 0.6s
+    transform: translateX(100%)
+  &:hover .top
+    transition: all 0.3s
+    transition-delay: 0.9s
+    transform: translateX(-100%)
+    
+
+  .top
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 150px
+
+    background-color: #333
+
+    transition: all 0.5
+    
+    
+
+  .bottom
+    position: absolute
+    top: 150px
+    left: 0
+    right: 0
+    bottom: 0
+
+    background-color: #444
+
+    transition: all 0.5
+    
+
+  .left
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 150px
+
+    background-color: #555
+
+    transition: all 0.5
+    
+
+  .right
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 150px
+    right: 0
+    background-color: #666
+
+    transition: all 0.5
+    
