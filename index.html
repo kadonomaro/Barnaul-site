@@ -16,8 +16,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="google-site-verification" content="jTJcY-id_oBPs6liOip-NBgMwbhzWzZDc8WeZq4DCvU" />
-  <meta name="keywords" content="барнаул, достопримечательности барнаула, история барнаула, ползунов, лисавенко, геблер, демидов" />
-  <meta name="description" content="Сайт о городе Барнауле. Достопримечательности, история, известные люди" />
+  <meta name="keywords" content="барнаул,город,достопримечательности барнаула,история барнаула,иван ползунов,михаил лисавенко,фридрих геблер,акинфий демидов" />
+  <meta name="description" content="Сайт о городе Барнауле. Краткое описание биографий известных людей города, достопримечательностей и немного фактов об истории." />
+  <meta name="theme-color" content="#0099cc">
+  <link rel="icon" sizes="32x32" href="img/logo32.png">
   
   <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
@@ -57,10 +59,34 @@
     <section class="people" id = "people">
       <h2 class="people__title">Известные люди Барнаула</h2>
       <div class="people__inner">  
-        <div class="human-card"><a href="#polzunov" class="human-card__link" id = "people-polzunov">Иван Ползунов</a><img src="img/people/polzunov.jpg" alt="Иван Ползунов" class="human-card__photo"  width="256" height="256"></div>
-        <div class="human-card"><a href="#demidov" class="human-card__link" id = "people-demidov">Акинфий Демидов <br></a><img src="img/people/demidov.jpg" alt="Акинфий Демидов" class="human-card__photo"  width="256" height="256"></div>
-        <div class="human-card"><a href="#lisavenko" class="human-card__link" id = "people-lisavenko">Михаил Лисавенко</a><img src="img/people/lisavenko.jpg" alt="Михаил Лисавенко" class="human-card__photo"  width="256" height="256"></div>
-        <div class="human-card"><a href="#gebler" class="human-card__link" id = "people-gebler">Фридрих Геблер</a><img src="img/people/gebler.jpg" alt="" class="human-card__photo"  width="256" height="256"></div>
+        <div class="human-card"><a href="#polzunov" class="human-card__link" id = "people-polzunov">Иван Ползунов</a>
+          <picture>
+            <source media="(max-width: 768px)" srcset="img/people/small/polzunov-small.jpg">
+            <img src="img/people/polzunov.jpg" alt="Иван Ползунов" class="human-card__photo">
+          </picture>
+          
+        </div>
+        <div class="human-card"><a href="#demidov" class="human-card__link" id = "people-demidov">Акинфий Демидов <br></a>
+          <picture>
+            <source media="(max-width: 768px)" srcset="img/people/small/demidov-small.jpg">
+            <img src="img/people/demidov.jpg" alt="Акинфий Демидов" class="human-card__photo">
+          </picture>
+          
+        </div>
+        <div class="human-card"><a href="#lisavenko" class="human-card__link" id = "people-lisavenko">Михаил Лисавенко</a>
+          <picture>
+            <source media="(max-width: 768px)" srcset="img/people/small/lisavenko-small.jpg">
+            <img src="img/people/lisavenko.jpg" alt="Михаил Лисавенко" class="human-card__photo">
+          </picture>
+          
+        </div>
+        <div class="human-card"><a href="#gebler" class="human-card__link" id = "people-gebler">Фридрих Геблер</a>
+          <picture>
+            <source media="(max-width: 768px)" srcset="img/people/small/gebler-small.jpg">
+            <img src="img/people/gebler.jpg" alt="Фридрих Геблер" class="human-card__photo">
+          </picture>
+          
+        </div>
       </div>
       
       <article class="human-article content-show" id = "polzunov">
@@ -130,7 +156,7 @@
       <article class="showplace">
         <figure class="showplace__figure rotate4">
           <img src="img/attractions/house-small.jpg" alt="Дом под шпилем"  width="377" height="256">
-          <figcaption class = "showplace__figcaption">Дом под шпилем</figcaption>
+          <figcaption class = "showplace__figcaption"><h3 class="showplace__titile">Дом под шпилем</h3></figcaption>
         </figure>
         <p class="showplace__description">
           В каждом городе с собственной историей есть хотя бы одно здание, известное всем его жителям. О них сочиняют легенды, пишут стихи и поют песни. В Москве это «Дом на Набережной», в Барнауле — «Дом под шпилем».
@@ -145,7 +171,7 @@
       <article class="showplace">
           <figure class="showplace__figure flex-order rotate-4">
             <img src="img/attractions/park-small.jpg" alt="Нагорный парк"  width="341" height="256">
-            <figcaption class = "showplace__figcaption">Нагорный парк</figcaption>
+            <figcaption class = "showplace__figcaption"><h3 class="showplace__titile">Нагорный парк</h3></figcaption>
           </figure>
           <p class="showplace__description">
             Нагорный парк находится в южной, нагорной части города Барнаула — на широком водоразделе между долинами рек Оби и Барнаулки. На западе парк выходит к первой надпойменной террасе Барнаулки, а на востоке обрывается крутым берегом в сторону Оби — бровкой уступа Приобского плато.
@@ -159,8 +185,8 @@
 
       <article class="showplace">
             <figure class="showplace__figure rotate4">
-              <img src="img/attractions/river-small.jpg" alt="" width="391" height="256">
-              <figcaption class = "showplace__figcaption">Речной вокзал</figcaption>
+              <img src="img/attractions/river-small.jpg" alt="Речной вокзал" width="391" height="256">
+              <figcaption class = "showplace__figcaption"><h3 class="showplace__titile">Речной вокзал</h3></figcaption>
             </figure>
             <p class="showplace__description">
               Украшает собой центр города и берег реки Обь. До середины 19 века хождение лодок и крупных судов по Оби через Барнаул не было частым. Но с появлением пароходов у томского купца Хаминова и пароходчиков Функа и Щербакова судоходное движение оживилось. 
@@ -181,37 +207,42 @@
       <div class="history__inner">
         <div class="history__photo"><img src="img/history/barnaul.jpg" alt="Основание Барнаула" width="520" height="320">
           <p class="history__description">
+            <span class="history__content">
               Барнаул – один из старейших сибирских городов. Его возникновение связано с именем известного уральского промышленника Акинфия Демидова. 
               Поиски новых месторождений серебра и меди привели рудознатцев Демидова на Алтай, где в устье реки Барнаулки в 1730 году и был основан медеплавильный (впоследствии – сереброплавильный) завод. 
-              Для охраны завода была выстроена крепость, вокруг которой со временем вырос посёлок.
-          </p>
+              Для охраны завода была выстроена крепость, вокруг которой со временем вырос посёлок.</span>
+            </p>
         </div>
 
         <div class="history__photo"><img src="img/history/fire.jpg" alt="Пожар 1917 года" width="520" height="320">
           <p class="history__description">
+            <span class="history__content">
               Барнаульский пожар 1917 года — самый крупный и опустошительный пожар за всю историю Барнаула, один из самых опустошительных городских пожаров за всю историю России.
               Огнём была охвачена центральная часть города от берега Оби на востоке до казарм на севере и Соборного переулка на юго-западе.
               Огнём было уничтожено около 60 кварталов, в том числе городская управа, окружной суд, отделения уездной и городской милиции, казначейство, 
               Дом революции, городская библиотека, телефонная, электрическая и водопроводные станции, городская амбулатория, Управление Алтайской железной дороги, 
-              казармы Барнаульского полка, пароходные конторы, мельница, лесопильный завод, шубное и пимокатное производство, 13 учебных заведений, 5 гостиниц, 3 типографии, «Иллюзион» и «Новый мир», приюты для детей-подкидышей, ночлежки.       
-          </p>
+              казармы Барнаульского полка, пароходные конторы, мельница, лесопильный завод, шубное и пимокатное производство, 13 учебных заведений, 5 гостиниц, 3 типографии, 
+              «Иллюзион» и «Новый мир», приюты для детей-подкидышей, ночлежки.</span>
+            </p>
         </div>        
 
         <div class="history__photo"><img src="img/history/bridge.jpg" alt="Строительство моста" width="520" height="320">
           <p class="history__description">
+            <span class="history__content">
               С 10 по 14 февраля 1985 года в Барнауле с визитом находился первый заместитель председателя Совета министров СССР Гейдар Алиев. 
               Он баллотировался в Верховный Совет РСФСР от барнаульского центрального избирательного округа № 148. 
               Во время этого визита было принято решение о строительстве нового коммунального моста через Обь.
               Строительство по проекту инженера Митькевича началось в конце 1980-х годов, но велось очень медленно, а в начале 1990-х годов вообще было заморожено. 
               Возобновилось оно после визита в Барнаул в мае 1992 года Бориса Ельцина. Президент России прямо на берегу Оби подписал проект указа и распоряжение о финансировании строительства нового моста в Барнауле. 
-              Через пять лет, в 1997 году состоялось его торжественное открытие.
+              Через пять лет, в 1997 году состоялось его торжественное открытие.</span>
           </p>
         </div>
 
         <div class="history__photo"><img src="img/history/altgtu.jpg" alt="АлтГТУ" width="520" height="320">
           <p class="history__description">
+            <span class="history__content">
             Послевоенное восстановление народного хозяйства и развитие города потребовали большого числа специалистов, управленцев и организаторов производства. Поэтому в Барнауле появляется ряд учебных заведений, дававших среднее специальное и высшее образование. 
-            Среди них строительный и машиностроительный техникумы, сельскохозяйственный, политехнический, медицинский институты и многие другие.
+            Среди них строительный и машиностроительный техникумы, сельскохозяйственный, политехнический, медицинский институты и многие другие.</span>
           </p>
         </div>
 
@@ -233,14 +264,37 @@
       </div>
     </footer><!--footer-->
 
-    <!-- <div class="box">
-      <div class="top"></div>
-      <div class="bottom"></div>
-      <div class="left"></div>
-      <div class="right"></div>
-    </div>
-  </div> -->
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter51204974 = new Ya.Metrika2({
+                    id:51204974,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/51204974" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 
   <script src = "script/main.js"></script>
+  
 </body>
 </html>
