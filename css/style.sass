@@ -6,7 +6,7 @@ $main-blue: #09c;
 html
   scroll-behavior: smooth;  //не поддерживается многими браузерами
   font-size: 16px;
-  @media screen and (max-width: 460px)
+  @media screen and (max-width: 768px)
     font-size: 12px;
 .page
   font-family: Roboto, Arial, sans-serif;
@@ -46,7 +46,6 @@ html
   display: flex;
   justify-content: space-around;
 
-  
   @media screen and (max-width: 900px)
     display: block;
     text-align: center;
@@ -55,6 +54,12 @@ html
   text-align: center
   @media screen and (max-width: 900px)
     width: 100%
+    border-bottom: 1px solid rgba(0, 102, 170, 0.5)
+    &:nth-child(5)
+      border-bottom: 0
+
+
+    
 
 
 .nav__item-close
@@ -141,9 +146,14 @@ html
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    padding: 10px 10px
     @media screen and (max-width: 1500px)
       justify-content: center;
-
+    @media screen and (max-width: 500px)
+      padding: 10px 50px
+    @media screen and (max-width: 400px)
+      padding: 10px 0
   &::before
     content: "";
     position: absolute;
@@ -172,25 +182,26 @@ html
     
   &__title
     position: relative;
-    
-    font-family: 'Roboto', sans-serif;
+  
     font-size: 1.8rem;
     text-align: center;
     color: $main-blue;
+
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
 
-         
 .human-card  
   position: relative;
-  min-width: 256px;
+  min-width: 128px
   width: 20%;
   height: auto;
 
-  margin: 15px 20px;
+  margin: 15px;
   
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   text-align: center;
   overflow: hidden;
+  @media screen and (max-width: 768px)
+    margin: 5px
   &__photo
     display: block;
     width: 100%;
@@ -228,6 +239,8 @@ html
 
     transform: translate(-50%,-50%);
     transition: opacity 0.5s;
+    @media screen and (max-width: 768px)
+      font-size: 1.2rem;
     
 .human-article
   display: none;
@@ -306,7 +319,6 @@ html
 
     margin-bottom: 15px;
     
-    font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
     text-align: center;
     color: $main-blue;
@@ -356,6 +368,8 @@ html
     padding: 5px 10px;
 
     text-align: center;
+  &__titile
+    font-weight: normal
 
   &__description
     line-height: 20px;
@@ -383,9 +397,6 @@ html
 
   overflow: auto;
   &__title
-    margin-bottom: 15px;
-
-    font-family: 'Roboto', sans-serif;
     font-size: 1.8rem;
     text-align: center;
     color: $main-blue;
@@ -394,6 +405,7 @@ html
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
     @media screen and (max-width: 1500px)
       justify-content: center;
 
@@ -430,6 +442,7 @@ html
 
       transition: opacity 0.5s;
   &__photo img
+    display: block;
     width: 100%;
     height: auto;
 
@@ -440,6 +453,9 @@ html
     width: 100%;
     height: 100%;
     z-index: 2;
+
+    display: flex;
+    align-items: center;
 
     padding: 10px 15px;
     box-sizing: border-box;
@@ -452,6 +468,8 @@ html
     opacity: 0;
     transition: opacity 0.5s;
     transform: translate(-50%, -50%);
+  &__content
+    margin: auto;
 
 
 /**** footer ****/
