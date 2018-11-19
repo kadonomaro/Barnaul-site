@@ -200,18 +200,6 @@ html
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   text-align: center;
   overflow: hidden;
-  @media screen and (max-width: 768px)
-    margin: 5px
-  &__photo
-    display: block;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-  
-  &:hover .human-card__link
-    opacity: 1;
-  &:hover::after
-    opacity: 0.8;
   &::after
     content: "";
     position: absolute;
@@ -224,6 +212,20 @@ html
     opacity: 0;
 
     transition: all 0.5s;
+  @media screen and (max-width: 768px)
+    margin: 5px
+  &__photo
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  &:hover .human-card__link,
+  &:focus .human-card__link
+    opacity: 1;
+  &:hover::after,
+  &:focus::after
+    opacity: 0.8;
+
   &__link
     position: absolute;
     top: 50%;
@@ -239,6 +241,8 @@ html
 
     transform: translate(-50%,-50%);
     transition: opacity 0.5s;
+    &:focus
+      opacity: 1;
     @media screen and (max-width: 768px)
       font-size: 1.2rem;
     
@@ -421,14 +425,6 @@ html
 
     overflow: hidden;
     overflow-y: auto;
-    @media screen and (max-width: 650px)
-      width: 100%;
-      height: auto;
-
-    &:hover::after
-      opacity: 0.8;
-    &:hover .history__description
-      opacity: 1;
     &::after
       content: "";
       position: absolute;
@@ -441,6 +437,16 @@ html
       opacity: 0;
 
       transition: opacity 0.5s;
+    &:hover::after,
+    &:focus::after
+      opacity: 0.8;
+    &:hover .history__description,
+    &:focus .history__description
+      opacity: 1;
+    @media screen and (max-width: 650px)
+      width: 100%;
+      height: auto;
+
   &__photo img
     display: block;
     width: 100%;

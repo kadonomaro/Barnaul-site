@@ -282,6 +282,19 @@ html {
   overflow: hidden;
 }
 
+.human-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 @media screen and (max-width: 768px) {
   .human-card {
     margin: 5px;
@@ -295,25 +308,13 @@ html {
   overflow: hidden;
 }
 
-.human-card:hover .human-card__link {
+.human-card:hover .human-card__link,
+.human-card:focus .human-card__link {
   opacity: 1;
 }
 
-.human-card:hover::after {
+.human-card:hover::after, .human-card:focus::after {
   opacity: 0.8;
-}
-
-.human-card::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  opacity: 0;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
 }
 
 .human-card__link {
@@ -330,6 +331,10 @@ html {
           transform: translate(-50%, -50%);
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
+}
+
+.human-card__link:focus {
+  opacity: 1;
 }
 
 @media screen and (max-width: 768px) {
@@ -602,21 +607,6 @@ html {
   overflow-y: auto;
 }
 
-@media screen and (max-width: 650px) {
-  .history__photo {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.history__photo:hover::after {
-  opacity: 0.8;
-}
-
-.history__photo:hover .history__description {
-  opacity: 1;
-}
-
 .history__photo::after {
   content: "";
   position: absolute;
@@ -628,6 +618,22 @@ html {
   opacity: 0;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
+}
+
+.history__photo:hover::after, .history__photo:focus::after {
+  opacity: 0.8;
+}
+
+.history__photo:hover .history__description,
+.history__photo:focus .history__description {
+  opacity: 1;
+}
+
+@media screen and (max-width: 650px) {
+  .history__photo {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .history__photo img {
