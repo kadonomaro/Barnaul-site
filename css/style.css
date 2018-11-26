@@ -150,6 +150,8 @@ html {
 
 /**** Main ****/
 .main {
+  z-index: -1;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,10 +169,19 @@ html {
   font-family: 'Lobster', cursive;
   font-weight: normal;
   text-align: center;
-  background: url("../img/background/old.jpg") no-repeat center;
-  background-size: cover;
   -webkit-transition: opacity 3s;
   transition: opacity 3s;
+}
+
+.main__background {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../img/background/old.jpg") no-repeat center;
+  background-size: cover;
 }
 
 .main__title, .main__subtitle {

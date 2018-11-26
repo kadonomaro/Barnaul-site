@@ -12,8 +12,8 @@ var showElemGebler = document.querySelector('#gebler');
 
 var elements = document.querySelectorAll('.human-article');
 
-var cssHref = document.querySelector('.css-href');
-cssHref.href = 'css/light-style.css';
+// var cssHref = document.querySelector('.css-href');
+// cssHref.href = 'css/light-style.css';
 
 
 
