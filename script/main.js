@@ -12,6 +12,11 @@ var showElemGebler = document.querySelector('#gebler');
 
 var elements = document.querySelectorAll('.human-article');
 
+var cssHref = document.querySelector('.css-href');
+cssHref.href = 'css/light-style.css';
+
+
+
 elemPolzunov.onclick = function(evt) {
   evt.preventDefault();
   for (i = 0; i < elements.length; i++) {
