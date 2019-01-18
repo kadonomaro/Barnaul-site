@@ -13,6 +13,7 @@ html
   font-size: 16px;
   background: url("../img/background/wood.jpg");
   background-color: #cc9;
+  background-attachment: fixed;
 
 .container
   width: 80%;
@@ -119,7 +120,6 @@ html
   transition: opacity 3s;
 
   &__background
-    // position: fixed
     position: absolute
     z-index: -1
     top: 0
@@ -129,8 +129,9 @@ html
 
     background: url("../img/background/old.jpg") no-repeat center;
     background-size: cover;
+    background-attachment: fixed
 
-    // opacity: 0.5;
+
 
   &__title, &__subtitle
     padding: 10px 10px;
@@ -370,11 +371,16 @@ html
     border-radius: 5px;
     
     transition: 0.5s;
+
     &:hover
       transform: rotate(0deg);
+
+
     @media screen and (max-width: 650px)
       width: 90%;
       height: auto;
+    
+
   
 
   &__figure img
@@ -386,7 +392,7 @@ html
     padding: 5px 10px;
 
     text-align: center;
-  &__titile
+  &__title
     font-weight: normal
 
   &__description

@@ -16,6 +16,7 @@ html {
   font-size: 16px;
   background: url("../img/background/wood.jpg");
   background-color: #cc9;
+  background-attachment: fixed;
 }
 
 .container {
@@ -182,6 +183,7 @@ html {
   right: 0;
   background: url("../img/background/old.jpg") no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .main__title, .main__subtitle {
@@ -536,7 +538,7 @@ html {
   text-align: center;
 }
 
-.showplace__titile {
+.showplace__title {
   font-weight: normal;
 }
 
