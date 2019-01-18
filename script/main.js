@@ -61,18 +61,10 @@ function isClose(){
 
 
 
+var mainBG = document.querySelector('.main__background');
+var mainTitle = document.querySelector('.main__title');
 
-
-//плавный скрол
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//   anchor.addEventListener('click', function (e) {
-//       e.preventDefault();
-
-//       document.querySelector(this.getAttribute('href')).scrollIntoView({
-//           behavior: 'smooth'
-//       });
-//   });
-// });
-
-
-
+window.onscroll = function () {
+  mainBG.style.filter = "blur(5px)";
+  mainTitle.style.opacity = "1";
+}

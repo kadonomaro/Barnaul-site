@@ -1,23 +1,23 @@
 window.onload = function () {
 
     var xhr = new XMLHttpRequest();
-    var fileJSON = "data/data.json"
+    var dataFile = "data/data.json"
     var posts;
     var attractions = document.querySelector('.attractions');
     
-    xhr.open("GET", fileJSON, false);
+    xhr.open("GET", dataFile, false);
     xhr.send();
     
     if (xhr.status == 200 && xhr.readyState == 4) {
         posts = JSON.parse(xhr.responseText);
         showPosts();
+        
     }
     
     
     function showPosts() {
         for (let i = 0; i < posts.length; i++) {
             const post = posts[i];
-            console.log(post.title);
 
             var showplace = document.createElement('article');
             var showplaceFig = document.createElement('figure');
@@ -30,6 +30,12 @@ window.onload = function () {
             showplace.setAttribute('tabindex', '0');
 
             showplaceFig.classList.add('showplace__figure');
+
+            if ((i % 2) == 1) {
+                showplaceFig.classList.add('flex-order');
+                
+                showplaceFig.classList.add('rotate-4');
+            }
 
             showplaceImg.setAttribute('src', post.img);
             showplaceImg.setAttribute('alt', post.alt);
@@ -45,12 +51,13 @@ window.onload = function () {
             showplaceFig.appendChild(showplaceImg);
             showplaceFig.appendChild(showplaceFigCap);
 
+            showplaceFigCap.appendChild(showplaceFigTitle);
+
             showplace.appendChild(showplaceFig);
             showplace.appendChild(showplaceContent);
 
             attractions.appendChild(showplace);
 
- 
         }
     }
      

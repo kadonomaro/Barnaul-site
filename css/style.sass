@@ -91,6 +91,7 @@ html
   color: #fff;
   text-decoration: none;
   white-space: nowrap;
+  outline-color: #eee;
   @media screen and (max-width: 900px)
     padding: 15px 15px;
 
@@ -118,6 +119,7 @@ html
   text-align: center;
   
   transition: opacity 3s;
+  overflow: hidden;
 
   &__background
     position: absolute
@@ -126,13 +128,17 @@ html
     bottom: 0
     left: 0
     right: 0
-
+    
     background: url("../img/background/old.jpg") no-repeat center;
     background-size: cover;
-    background-attachment: fixed
+    background-attachment: fixed;
 
+    transition: filter 1.5s;
 
-
+  
+  &__title
+    opacity: 0;
+    transition: opacity 2.5s;
   &__title, &__subtitle
     padding: 10px 10px;
 
@@ -371,6 +377,7 @@ html
     border-radius: 5px;
     
     transition: 0.5s;
+    transform: rotate(4deg);
 
     &:hover
       transform: rotate(0deg);
@@ -396,7 +403,7 @@ html
     font-weight: normal
 
   &__description
-    line-height: 20px;
+    line-height: 1.4rem;
     font-size: 1.2rem;
     
 /********************************Service Classes /********************************/
@@ -404,8 +411,7 @@ html
   order: 1;
   @media screen and (max-width: 1200px)
     order: 0;
-.rotate4
-  transform: rotate(4deg);
+
 .rotate-4
   transform: rotate(-4deg);
   
