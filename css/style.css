@@ -627,6 +627,10 @@ html {
   border: 1px solid #333;
   overflow: hidden;
   overflow-y: auto;
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
+  transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
 }
 
 .history__photo::after {
@@ -656,6 +660,16 @@ html {
     width: 100%;
     height: auto;
   }
+}
+
+.history__photo_fade-left {
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
+}
+
+.history__photo_fade-right {
+  -webkit-transform: translateX(150%);
+          transform: translateX(150%);
 }
 
 .history__photo img {

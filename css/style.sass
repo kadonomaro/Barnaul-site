@@ -390,8 +390,6 @@ html
       height: auto;
     
 
-  
-
   &__figure img
     @media screen and (max-width: 650px)
       width: 100%;
@@ -453,6 +451,7 @@ html
 
     overflow: hidden;
     overflow-y: auto;
+    transition: transform 1.5s;
     &::after
       content: "";
       position: absolute;
@@ -474,6 +473,10 @@ html
     @media screen and (max-width: 650px)
       width: 100%;
       height: auto;
+  &__photo_fade-left
+    transform: translateX(-150%);
+  &__photo_fade-right
+    transform: translateX(150%);
 
   &__photo img
     display: block;
