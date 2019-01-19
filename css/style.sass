@@ -85,6 +85,7 @@ html
 
 .is-close
   transform: translateY(-80%);
+  
 .nav__link
   display: block;
   padding: 20px 15px;
@@ -92,10 +93,11 @@ html
   text-decoration: none;
   white-space: nowrap;
   outline-color: #eee;
+  transition: all 0.3s;
   @media screen and (max-width: 900px)
     padding: 15px 15px;
 
-  transition: all 0.3s;
+  
   &:hover
     background: darken($main-blue, 5%);
 
