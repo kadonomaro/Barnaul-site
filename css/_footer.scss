@@ -1,0 +1,24 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background: url('../img/footer/background.jpg');
+    border-top: 1px solid #333;
+    &-about__title {
+        font-size: 1.2rem;
+        color: #3399ff;
+    }
+    &-about__link {
+        display: block;
+        margin-top: 10px;
+  
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: #FFF;
+  
+        transition: color 0.3s;
+        &:hover {
+            color: #aaa;
+        }
+    }
+}

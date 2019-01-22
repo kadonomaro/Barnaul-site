@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     mainTitle.style.opacity = "1";
     mainTitle.style.transform = `translateY(${window.pageYOffset / 2}px)`;
     mainSub.style.transform = `translateY(-${window.pageYOffset / 6}px)`;
-    console.dir(thumbs[1].style);
+    
     if (window.pageYOffset >= (people.offsetTop - 500)) {
       for (let i = 0; i < thumbs.length; i++) {
         thumbs[i].style.opacity = "1";
