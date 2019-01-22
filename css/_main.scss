@@ -1,0 +1,47 @@
+.main {
+    z-index: -1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+    text-align: center;
+    
+    transition: opacity 3s;
+    overflow: hidden;
+    &__background {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        
+        background: url("../img/background/old.jpg") no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+    
+        transition: filter 1.5s;
+    }
+    &__title {
+        opacity: 0;
+        transition: opacity 2.5s;
+    }
+    &__title, &__subtitle {
+        padding: 10px 10px;
+  
+        font-size: 2rem;
+        font-weight: normal;
+        color: #fff;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+    }
+    &__subtitle {
+        display: block;
+        font-size: 3rem;
+    }
+      
+}

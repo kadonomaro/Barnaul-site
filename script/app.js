@@ -57,7 +57,6 @@ window.onload = function () {
             showplace.appendChild(showplaceContent);
 
             attractions.appendChild(showplace);
-
         }
     }
      
