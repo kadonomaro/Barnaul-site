@@ -1,0 +1,22 @@
+.attractions {
+    padding: 10px 20px;
+    background: url("../img/background/attractions.jpg") no-repeat center;
+    background-size: cover;
+    border-top: 1px solid #333;
+    &__title {
+      position: relative;
+  
+      margin-bottom: 15px;
+      
+      font-size: 1.8rem;
+      text-align: center;
+      color: $main-blue;
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+    }
+
+    @media screen and (max-width: 650px) {
+        padding: 10px;
+      }
+  
+}
+  

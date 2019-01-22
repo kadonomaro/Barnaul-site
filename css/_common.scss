@@ -29,5 +29,15 @@ html {
 .header {
     position: relative;
 }
-  
-  
+
+.flex-order {
+    order: 1;
+    @media screen and (max-width: 1200px) {
+        order: 0;
+    }
+      
+}
+
+.rotate-4 {
+    transform: rotate(-4deg);
+}
