@@ -1,6 +1,5 @@
-
-
 document.addEventListener("DOMContentLoaded", function () {
+
   //смена статей об известных людях
   var thumbs = document.querySelectorAll('.human-card');
   var articles = document.querySelectorAll('.human-article');
@@ -25,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     nav.classList.toggle('is-close');
   };
 
-  //размытие главного экрана и появление заголовка
+    //добавление эффектов про скролле
   var mainBG = document.querySelector('.main__background');
   var mainTitle = document.querySelector('.main__title');
   var mainSub = document.querySelector('.main__subtitle');
@@ -33,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var historyPhoto = document.querySelectorAll('.history__photo');
 
   
-  //добавление эффектов про скролле
+
   window.addEventListener('scroll', function () {
     mainBG.style.filter = "blur(5px)";
     mainTitle.style.opacity = "1";
