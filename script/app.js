@@ -1,9 +1,9 @@
 window.onload = function () {
 
-    var xhr = new XMLHttpRequest();
-    var dataFile = "data/data.json";
-    var posts;
-    var attractions = document.querySelector('.attractions');
+    let xhr = new XMLHttpRequest();
+    let dataFile = "data/data.json";
+    let posts;
+    let attractions = document.querySelector('.attractions');
     
     xhr.open("GET", dataFile, false);
     xhr.send();
@@ -16,9 +16,9 @@ window.onload = function () {
     
     
     function showPosts() {
-        for (let i = 0; i < posts.length; i++) {
 
-            const post = posts[i];
+        posts.forEach((post, index) => {
+        
             let article = `
                 <article class="showplace" tabindex="0">
                     <figure class="showplace__figure">
@@ -31,49 +31,16 @@ window.onload = function () {
                 </article>  
             `;
 
-            attractions.appendChild(article);
+            attractions.innerHTML += article;
+        });
 
-            
+        let showplaceFig = document.querySelectorAll('.showplace__figure');
 
-            var showplace = document.createElement('article');
-            var showplaceFig = document.createElement('figure');
-            var showplaceFigCap = document.createElement('figcaption');
-            var showplaceFigTitle = document.createElement('h3');
-            var showplaceImg = document.createElement('img');
-            var showplaceContent = document.createElement('p');
-            
-            showplace.classList.add('showplace');
-            showplace.setAttribute('tabindex', '0');
-
-            showplaceFig.classList.add('showplace__figure');
-
-            if ((i % 2) == 1) {
-                showplaceFig.classList.add('flex-order');
-                
-                showplaceFig.classList.add('rotate-4');
+        showplaceFig.forEach((figure, index) => {
+            if ((index % 2) == 1) {
+                figure.classList.add('flex-order', 'rotate-4');
             }
-
-            showplaceImg.setAttribute('src', post.img);
-            showplaceImg.setAttribute('alt', post.alt);
-            
-            showplaceFigCap.classList.add('showplace__figcaption');
-
-            showplaceFigTitle.classList.add('showplace__title');
-            showplaceFigTitle.textContent = post.title;
-            
-            showplaceContent.classList.add('showplace__description');
-            showplaceContent.textContent = post.content;
-            
-            showplaceFig.appendChild(showplaceImg);
-            showplaceFig.appendChild(showplaceFigCap);
-
-            showplaceFigCap.appendChild(showplaceFigTitle);
-
-            showplace.appendChild(showplaceFig);
-            showplace.appendChild(showplaceContent);
-
-            attractions.appendChild(showplace);
-        }
+        });
     }
      
-}
+};

@@ -1,3 +1,4 @@
 # Exclude any *.PSD, *.txt source
 *.psd
 *.txt
+.jshintrc
