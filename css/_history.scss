@@ -1,5 +1,5 @@
 .history {
-    padding: 20px;
+    padding: 20px 0;
 
     background: url("../img/background/history.jpg") no-repeat center;
     background-size: cover;
@@ -15,11 +15,10 @@
     &__inner {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 -10px;
         overflow: hidden;
     }
     &__photo {
-        @include flex-columns(6, 10px);
+        @include flex-columns(6, 20px);
         position: relative;
         padding: 15px;
         margin-bottom: 10px;
@@ -96,7 +95,7 @@
     }
 
     @media screen and (max-width: 767px) {
-        padding: 10px;
+        padding: 10px 0;
     }
       
     

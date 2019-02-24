@@ -630,7 +630,7 @@ html {
 }
 
 .history {
-  padding: 20px;
+  padding: 20px 0;
   background: url("../img/background/history.jpg") no-repeat center;
   background-size: cover;
   border-top: 1px solid #333;
@@ -651,16 +651,15 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 -10px;
   overflow: hidden;
 }
 
 .history__photo {
-  -ms-flex-preferred-size: calc((100% / 12 * 6) - (10px * 2));
-      flex-basis: calc((100% / 12 * 6) - (10px * 2));
-  max-width: calc((100% / 12 * 6) - (10px * 2));
-  margin-right: 10px;
-  margin-left: 10px;
+  -ms-flex-preferred-size: calc((100% / 12 * 6) - (20px * 2));
+      flex-basis: calc((100% / 12 * 6) - (20px * 2));
+  max-width: calc((100% / 12 * 6) - (20px * 2));
+  margin-right: 20px;
+  margin-left: 20px;
   position: relative;
   padding: 15px;
   margin-bottom: 10px;
@@ -758,7 +757,7 @@ html {
 
 @media screen and (max-width: 767px) {
   .history {
-    padding: 10px;
+    padding: 10px 0;
   }
 }
 
