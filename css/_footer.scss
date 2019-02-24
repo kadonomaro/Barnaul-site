@@ -21,4 +21,21 @@
             color: #aaa;
         }
     }
+
+    @media screen and (max-width: 767px) {
+        padding: 20px 10px;
+    }
+}
+
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    &__link {
+        display: block;
+    }
+    &__link img {
+        display: block;
+    }
 }

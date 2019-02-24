@@ -791,4 +791,28 @@ html {
 .footer-about__link:hover {
   color: #aaa;
 }
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 20px 10px;
+  }
+}
+
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+
+.footer-logo__link {
+  display: block;
+}
+
+.footer-logo__link img {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */
