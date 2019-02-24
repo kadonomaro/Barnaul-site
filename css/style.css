@@ -630,7 +630,7 @@ html {
 }
 
 .history {
-  padding: 10px;
+  padding: 20px;
   background: url("../img/background/history.jpg") no-repeat center;
   background-size: cover;
   border-top: 1px solid #333;
@@ -638,6 +638,7 @@ html {
 }
 
 .history__title {
+  margin-bottom: 15px;
   font-size: 1.8rem;
   text-align: center;
   color: #09c;
@@ -650,23 +651,19 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media screen and (max-width: 1500px) {
-  .history__inner {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
+  margin: 0 -10px;
+  overflow: hidden;
 }
 
 .history__photo {
+  -ms-flex-preferred-size: calc((100% / 12 * 6) - (10px * 2));
+      flex-basis: calc((100% / 12 * 6) - (10px * 2));
+  max-width: calc((100% / 12 * 6) - (10px * 2));
+  margin-right: 10px;
+  margin-left: 10px;
   position: relative;
   padding: 15px;
-  margin: 10px;
+  margin-bottom: 10px;
   background: url("../img/tiles/paper2.jpg");
   border: 1px solid #333;
   overflow: hidden;
@@ -701,10 +698,14 @@ html {
   opacity: 1;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 767px) {
   .history__photo {
-    width: 100%;
-    height: auto;
+    -ms-flex-preferred-size: calc((100% / 12 * 12) - (10px * 2));
+        flex-basis: calc((100% / 12 * 12) - (10px * 2));
+    max-width: calc((100% / 12 * 12) - (10px * 2));
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 5px;
   }
 }
 
@@ -753,6 +754,12 @@ html {
 
 .history__content {
   margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .history {
+    padding: 10px;
+  }
 }
 
 .footer {

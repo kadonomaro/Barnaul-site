@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
 
   window.addEventListener('scroll', function () {
+    
     mainBG.style.filter = "blur(2px)";
     mainTitle.style.opacity = "1";
     mainTitle.style.transform = `translateY(${window.pageYOffset / 2}px)`;
