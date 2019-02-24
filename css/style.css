@@ -486,7 +486,7 @@ html {
   }
 }
 
-.content-show {
+.human-article_active {
   display: block;
   -webkit-transform: translateX(0);
           transform: translateX(0);

@@ -4,15 +4,16 @@ document.addEventListener("DOMContentLoaded", function () {
   var thumbs = document.querySelectorAll('.human-card');
   var articles = document.querySelectorAll('.human-article');
 
-  for (let i = 0; i < thumbs.length; i++) {
-      thumbs[i].addEventListener('click', function (evt) {
-        evt.preventDefault();
-        articles.forEach(article => {
-          article.classList.remove('content-show');
-        });
-        articles[i].classList.add('content-show'); 
+  thumbs.forEach((thumb,index) => {
+    thumb.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      articles.forEach(article => {
+        article.classList.remove('human-article_active');
       });
-  }
+      articles[index].classList.add('human-article_active');
+    });
+  });
+
 
   //закрытие меню
   var closeMenu = document.querySelector('.nav__item-close');
@@ -22,8 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function isClose(){
     nav.classList.toggle('is-close');
-  };
+  }
 
+  
     //добавление эффектов про скролле
   var mainBG = document.querySelector('.main__background');
   var mainTitle = document.querySelector('.main__title');
@@ -34,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
 
   window.addEventListener('scroll', function () {
-    mainBG.style.filter = "blur(5px)";
+    mainBG.style.filter = "blur(2px)";
     mainTitle.style.opacity = "1";
     mainTitle.style.transform = `translateY(${window.pageYOffset / 2}px)`;
     mainSub.style.transform = `translateY(-${window.pageYOffset / 6}px)`;
@@ -43,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
       for (let i = 0; i < thumbs.length; i++) {
         thumbs[i].style.opacity = "1";
         thumbs[i].style.transition = "opacity 1s";
-        thumbs[i].style.transitionDelay = `${i/2}s`;
+        thumbs[i].style.transitionDelay = `${i / 2}s`;
       }
     }
 
@@ -54,6 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
         photo.classList.remove('history__photo_fade-right');
       });
     }
-  })
+  });
   
 });

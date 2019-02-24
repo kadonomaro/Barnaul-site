@@ -118,13 +118,13 @@
     }
   
 }
-  
-.content-show {
+.human-article_active {
     display: block;
     transform: translateX(0);
     animation-name: show_double;
     animation-duration: 1s;
 }
+
 
 @keyframes show_double {
     0% {
